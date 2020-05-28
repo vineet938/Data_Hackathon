@@ -1,0 +1,16 @@
+{
+  "headless": true,
+  
+  "debug": false,
+
+  "uiis": {
+    "url": "#{Test.Uiis.URL}#",
+    "username": "#{Test.Uiis.Username}#",
+    "password": "#{Test.Uiis.Password}#"
+  },
+
+  "connectionString": {
+    "imis": "#{Test.Uiis.Db.Imis}#",
+    "uiis": "#{Test.Uiis.Db.Uiis}#"
+  }
+}

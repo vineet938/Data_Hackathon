@@ -1,0 +1,29 @@
+{
+	"$schema": "http://json.schemastore.org/proxies",
+	"proxies": {
+		"Root": {
+			"disabled": false,
+			"matchCondition": {
+				"route": "/r/{name}/"
+			},
+			"backendUri": "https://testrpt.azurewebsites.net/api/GetTestReport?name={name}"
+		},
+			"Screenshot": {
+				"disabled": false,
+				"matchCondition": {
+					"route": "/r/{name}/{extra}"
+				},
+				"backendUri": "https://testrpt.azurewebsites.net/api/GetTestReport?name={name}&extra={extra}"
+			},
+			"Redirect": {
+				"disabled": false,
+				"matchCondition": {
+					"route": "/r/{name}"
+				},
+				"responseOverrides": {
+					"response.statusCode": "301",
+					"response.headers.Location": "https://testrpt.azurewebsites.net/r/{name}/"
+				}
+			}
+	}
+}

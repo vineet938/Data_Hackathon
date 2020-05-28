@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="AutoAssignGTIN" Id="00eb0524-a882-45e5-9434-3f02acea1d8b" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.9fbcc98b-2c0e-45c5-8e7f-02b456cde786.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <Request Method="POST" Guid="1231fa4f-09a7-4312-8236-81864971cea0" Version="1.1" Url="https://dh.stage.gs1us.org/Product/Detail/AutoAssignGTIN" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="https://dh.stage.gs1us.org/Product/Detail/Index/{{ProductId}}" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="product[ProductId]" Value="{{ProductId}}" RecordedValue="18536232" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[SourceId]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[Description]" Value="load_test_prd" RecordedValue="load_test_prd" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[BrandName]" Value="test" RecordedValue="test" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixID]" Value="567396" RecordedValue="567396" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[DefaultFirstPrefixID]" Value="567396" RecordedValue="567396" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[LevelCategoryIndustryID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IndustryID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[LevelCategoryID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[LevelCategory]" Value="Each" RecordedValue="Each" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[LevelCategoryDisplayName]" Value="Each" RecordedValue="Each" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[LevelCategorySortOrder]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IsUniversalyShared]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IsPurchasable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IsVariable]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[GTIN14]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[GTIN12]" Value="N/A" RecordedValue="N/A" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[GTIN13]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[EntityStateID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[EntityState]" Value="Draft" RecordedValue="Draft" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IsActive]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[CompanyID]" Value="372604" RecordedValue="372604" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[CompanyName]" Value="GS1 US Enterprises 1" RecordedValue="GS1 US Enterprises 1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IsBase]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[CanContainItems]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[EntityStateStartDate]" Value="/Date(1549376525670)/" RecordedValue="/Date(1549376525670)/" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[EntityStateStartDateString]" Value="2/5/2019" RecordedValue="2/5/2019" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[EntityStateEndDateString]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[EntityStateUser]" Value="jrivas@anexinet.com" RecordedValue="jrivas@anexinet.com" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[CreateDateTime]" Value="/Date(1549376525670)/" RecordedValue="/Date(1549376525670)/" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[CreateUser]" Value="jrivas@anexinet.com" RecordedValue="jrivas@anexinet.com" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[LastUpdateDateTime]" Value="/Date(1549376525670)/" RecordedValue="/Date(1549376525670)/" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[LastUpdateUser]" Value="jrivas@anexinet.com" RecordedValue="jrivas@anexinet.com" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[productImageID]" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[productImagePath]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[productImageIsEnhanced]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[ImageCount]" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[ParentCount]" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[ChildCount]" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IsParentOrChildPrefixInActiveOrTerminated]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[CurrentDate]" Value="2/5/2019" RecordedValue="2/5/2019" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[WasAddNewContentsButtonClicked]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[CompanyEnableDefaultProductShare]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][0][PrefixID]" Value="567396" RecordedValue="567396" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][0][Prefix]" Value="0180000001" RecordedValue="0180000001" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][0][PrefixDisplay]" Value="0180000001 (81/100)" RecordedValue="0180000001 (81/100)" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][0][RemainingPrefixCapacity]" Value="81" RecordedValue="81" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][0][TotalPrefixCapacity]" Value="100" RecordedValue="100" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][0][IsInactive]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][0][$$hashKey]" Value="object:20" RecordedValue="object:20" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][1][PrefixID]" Value="574977" RecordedValue="574977" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][1][Prefix]" Value="0193595" RecordedValue="0193595" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][1][PrefixDisplay]" Value="0193595 (99,998/100,000)" RecordedValue="0193595 (99,998/100,000)" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][1][RemainingPrefixCapacity]" Value="99998" RecordedValue="99998" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][1][TotalPrefixCapacity]" Value="100000" RecordedValue="100000" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][1][IsInactive]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][1][$$hashKey]" Value="object:21" RecordedValue="object:21" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][2][PrefixID]" Value="315522" RecordedValue="315522" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][2][Prefix]" Value="081414100" RecordedValue="081414100" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][2][PrefixDisplay]" Value="081414100 (731/1,000)" RecordedValue="081414100 (731/1,000)" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][2][RemainingPrefixCapacity]" Value="731" RecordedValue="731" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][2][TotalPrefixCapacity]" Value="1000" RecordedValue="1000" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][2][IsInactive]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][2][$$hashKey]" Value="object:22" RecordedValue="object:22" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][3][PrefixID]" Value="574942" RecordedValue="574942" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][3][Prefix]" Value="08600002957" RecordedValue="08600002957" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][3][PrefixDisplay]" Value="08600002957 (9/10)" RecordedValue="08600002957 (9/10)" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][3][RemainingPrefixCapacity]" Value="9" RecordedValue="9" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][3][TotalPrefixCapacity]" Value="10" RecordedValue="10" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][3][IsInactive]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][3][$$hashKey]" Value="object:23" RecordedValue="object:23" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][4][PrefixID]" Value="566555" RecordedValue="566555" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][4][Prefix]" Value="08604270020" RecordedValue="08604270020" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][4][PrefixDisplay]" Value="08604270020 (10/10)" RecordedValue="08604270020 (10/10)" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][4][RemainingPrefixCapacity]" Value="10" RecordedValue="10" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][4][TotalPrefixCapacity]" Value="10" RecordedValue="10" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][4][IsInactive]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PrefixList][4][$$hashKey]" Value="object:24" RecordedValue="object:24" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IndustryList][0][IndustryID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IndustryList][0][Industry]" Value="General" RecordedValue="General" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IndustryList][1][IndustryID]" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IndustryList][1][Industry]" Value="CPG" RecordedValue="CPG" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IndustryList][2][IndustryID]" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IndustryList][2][Industry]" Value="Regulated Healthcare" RecordedValue="Regulated Healthcare" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IndustryList][3][IndustryID]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IndustryList][3][Industry]" Value="Foodservice" RecordedValue="Foodservice" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IndustryList][4][IndustryID]" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[IndustryList][4][Industry]" Value="Apparel" RecordedValue="Apparel" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][0][LevelCategoryID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][0][LevelCategoryIndustryID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][0][DisplayName]" Value="Each" RecordedValue="Each" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][0][SortOrder]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][0][IsBase]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][0][IsHomogeneous]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][1][LevelCategoryID]" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][1][LevelCategoryIndustryID]" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][1][DisplayName]" Value="Inner Pack" RecordedValue="Inner Pack" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][1][SortOrder]" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][1][IsBase]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][1][IsHomogeneous]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][2][LevelCategoryID]" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][2][LevelCategoryIndustryID]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][2][DisplayName]" Value="Case" RecordedValue="Case" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][2][SortOrder]" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][2][IsBase]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][2][IsHomogeneous]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][3][LevelCategoryID]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][3][LevelCategoryIndustryID]" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][3][DisplayName]" Value="Display Shipper" RecordedValue="Display Shipper" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][3][SortOrder]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][3][IsBase]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][3][IsHomogeneous]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][4][LevelCategoryID]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][4][LevelCategoryIndustryID]" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][4][DisplayName]" Value="Mixed Case" RecordedValue="Mixed Case" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][4][SortOrder]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][4][IsBase]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][4][IsHomogeneous]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][5][LevelCategoryID]" Value="7" RecordedValue="7" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][5][LevelCategoryIndustryID]" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][5][DisplayName]" Value="Case as Each" RecordedValue="Case as Each" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][5][SortOrder]" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][5][IsBase]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][5][IsHomogeneous]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][6][LevelCategoryID]" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][6][LevelCategoryIndustryID]" Value="7" RecordedValue="7" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][6][DisplayName]" Value="Pallet" RecordedValue="Pallet" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][6][SortOrder]" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][6][IsBase]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][6][IsHomogeneous]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][7][LevelCategoryID]" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][7][LevelCategoryIndustryID]" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][7][DisplayName]" Value="Mixed Pallet" RecordedValue="Mixed Pallet" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][7][SortOrder]" Value="7" RecordedValue="7" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][7][IsBase]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[PackagingLevelList][7][IsHomogeneous]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[StatusList][0][EntityStateID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[StatusList][0][EntityState]" Value="Draft" RecordedValue="Draft" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[StatusList][1][EntityStateID]" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[StatusList][1][EntityState]" Value="In Use" RecordedValue="In Use" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[DimensionUnitsOfMeasureList][0][UnitOfMeasureID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[DimensionUnitsOfMeasureList][0][UnitOfMeasure]" Value="Inches" RecordedValue="Inches" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[DimensionUnitsOfMeasureList][1][UnitOfMeasureID]" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[DimensionUnitsOfMeasureList][1][UnitOfMeasure]" Value="Feet" RecordedValue="Feet" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[DimensionUnitsOfMeasureList][2][UnitOfMeasureID]" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[DimensionUnitsOfMeasureList][2][UnitOfMeasure]" Value="Millimeters" RecordedValue="Millimeters" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[DimensionUnitsOfMeasureList][3][UnitOfMeasureID]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[DimensionUnitsOfMeasureList][3][UnitOfMeasure]" Value="Centimeters" RecordedValue="Centimeters" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[DimensionUnitsOfMeasureList][4][UnitOfMeasureID]" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[DimensionUnitsOfMeasureList][4][UnitOfMeasure]" Value="Meters" RecordedValue="Meters" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[WeightUnitsOfMeasureList][0][UnitOfMeasureID]" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[WeightUnitsOfMeasureList][0][UnitOfMeasure]" Value="Ounces" RecordedValue="Ounces" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[WeightUnitsOfMeasureList][1][UnitOfMeasureID]" Value="7" RecordedValue="7" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[WeightUnitsOfMeasureList][1][UnitOfMeasure]" Value="Pounds" RecordedValue="Pounds" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[WeightUnitsOfMeasureList][2][UnitOfMeasureID]" Value="10" RecordedValue="10" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[WeightUnitsOfMeasureList][2][UnitOfMeasure]" Value="Milligrams" RecordedValue="Milligrams" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[WeightUnitsOfMeasureList][3][UnitOfMeasureID]" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[WeightUnitsOfMeasureList][3][UnitOfMeasure]" Value="Grams" RecordedValue="Grams" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[WeightUnitsOfMeasureList][4][UnitOfMeasureID]" Value="9" RecordedValue="9" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[WeightUnitsOfMeasureList][4][UnitOfMeasure]" Value="Kilograms" RecordedValue="Kilograms" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[WeightUnitsOfMeasureList][5][UnitOfMeasureID]" Value="11" RecordedValue="11" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[WeightUnitsOfMeasureList][5][UnitOfMeasure]" Value="Short Ton" RecordedValue="Short Ton" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[SolutionProviderBanner]" Value="This is a place holder for Solution Provider Banner" RecordedValue="This is a place holder for Solution Provider Banner" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[GPCUrl]" Value="https://www.gs1.org/services/gpc-browser" RecordedValue="https://www.gs1.org/services/gpc-browser" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[GTIN_12_13]" Value="N/A" RecordedValue="N/A" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="product[__RequestVerificationToken]" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="hontUo6vWlGhRxSJ5rpK15nryEFW_jo1mZyTXwFuJSYA2fun2XAt9mHIWxATcgecigtUFfuB73bkV8lPdd2JDOS3MfYuA_IabNr87oduKRe188NCzjue_JbLvJO3eEX0imDHlwOVuBOxCkVE_QKoMA2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="validate" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="hontUo6vWlGhRxSJ5rpK15nryEFW_jo1mZyTXwFuJSYA2fun2XAt9mHIWxATcgecigtUFfuB73bkV8lPdd2JDOS3MfYuA_IabNr87oduKRe188NCzjue_JbLvJO3eEX0imDHlwOVuBOxCkVE_QKoMA2" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="52949ab8-d110-4ae4-adc5-30d97754aaf4" Version="1.1" Url="https://dh.stage.gs1us.org/Product/Detail/AutoAssignGTIN" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="https://dh.stage.gs1us.org/Product/Detail/Index/{{ProductId}}" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="ProductId" Value="{{ProductId}}" RecordedValue="18536232" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="SourceId" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Description" Value="load_test_prd" RecordedValue="load_test_prd" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="BrandName" Value="test" RecordedValue="test" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixID" Value="567396" RecordedValue="567396" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="DefaultFirstPrefixID" Value="567396" RecordedValue="567396" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="LevelCategoryIndustryID" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IndustryID" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="LevelCategoryID" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="LevelCategory" Value="Each" RecordedValue="Each" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="LevelCategoryDisplayName" Value="Each" RecordedValue="Each" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="LevelCategorySortOrder" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IsUniversalyShared" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IsPurchasable" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IsVariable" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="GTIN14" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="GTIN12" Value="N/A" RecordedValue="N/A" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="GTIN13" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="EntityStateID" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="EntityState" Value="Draft" RecordedValue="Draft" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IsActive" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="CompanyID" Value="372604" RecordedValue="372604" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="CompanyName" Value="GS1 US Enterprises 1" RecordedValue="GS1 US Enterprises 1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IsBase" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="CanContainItems" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="EntityStateStartDate" Value="/Date(1549376525670)/" RecordedValue="/Date(1549376525670)/" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="EntityStateStartDateString" Value="2/5/2019" RecordedValue="2/5/2019" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="EntityStateEndDateString" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="EntityStateUser" Value="jrivas@anexinet.com" RecordedValue="jrivas@anexinet.com" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="CreateDateTime" Value="/Date(1549376525670)/" RecordedValue="/Date(1549376525670)/" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="CreateUser" Value="jrivas@anexinet.com" RecordedValue="jrivas@anexinet.com" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="LastUpdateDateTime" Value="/Date(1549376525670)/" RecordedValue="/Date(1549376525670)/" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="LastUpdateUser" Value="jrivas@anexinet.com" RecordedValue="jrivas@anexinet.com" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="productImageID" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="productImagePath" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="productImageIsEnhanced" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ImageCount" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ParentCount" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ChildCount" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IsParentOrChildPrefixInActiveOrTerminated" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="CurrentDate" Value="2/5/2019" RecordedValue="2/5/2019" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="WasAddNewContentsButtonClicked" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="CompanyEnableDefaultProductShare" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[0][PrefixID]" Value="567396" RecordedValue="567396" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[0][Prefix]" Value="0180000001" RecordedValue="0180000001" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[0][PrefixDisplay]" Value="0180000001 (81/100)" RecordedValue="0180000001 (81/100)" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[0][RemainingPrefixCapacity]" Value="81" RecordedValue="81" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[0][TotalPrefixCapacity]" Value="100" RecordedValue="100" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[0][IsInactive]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[0][$$hashKey]" Value="object:20" RecordedValue="object:20" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[1][PrefixID]" Value="574977" RecordedValue="574977" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[1][Prefix]" Value="0193595" RecordedValue="0193595" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[1][PrefixDisplay]" Value="0193595 (99,998/100,000)" RecordedValue="0193595 (99,998/100,000)" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[1][RemainingPrefixCapacity]" Value="99998" RecordedValue="99998" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[1][TotalPrefixCapacity]" Value="100000" RecordedValue="100000" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[1][IsInactive]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[1][$$hashKey]" Value="object:21" RecordedValue="object:21" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[2][PrefixID]" Value="315522" RecordedValue="315522" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[2][Prefix]" Value="081414100" RecordedValue="081414100" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[2][PrefixDisplay]" Value="081414100 (731/1,000)" RecordedValue="081414100 (731/1,000)" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[2][RemainingPrefixCapacity]" Value="731" RecordedValue="731" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[2][TotalPrefixCapacity]" Value="1000" RecordedValue="1000" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[2][IsInactive]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[2][$$hashKey]" Value="object:22" RecordedValue="object:22" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[3][PrefixID]" Value="574942" RecordedValue="574942" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[3][Prefix]" Value="08600002957" RecordedValue="08600002957" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[3][PrefixDisplay]" Value="08600002957 (9/10)" RecordedValue="08600002957 (9/10)" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[3][RemainingPrefixCapacity]" Value="9" RecordedValue="9" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[3][TotalPrefixCapacity]" Value="10" RecordedValue="10" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[3][IsInactive]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[3][$$hashKey]" Value="object:23" RecordedValue="object:23" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[4][PrefixID]" Value="566555" RecordedValue="566555" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[4][Prefix]" Value="08604270020" RecordedValue="08604270020" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[4][PrefixDisplay]" Value="08604270020 (10/10)" RecordedValue="08604270020 (10/10)" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[4][RemainingPrefixCapacity]" Value="10" RecordedValue="10" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[4][TotalPrefixCapacity]" Value="10" RecordedValue="10" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[4][IsInactive]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PrefixList[4][$$hashKey]" Value="object:24" RecordedValue="object:24" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IndustryList[0][IndustryID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IndustryList[0][Industry]" Value="General" RecordedValue="General" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IndustryList[1][IndustryID]" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IndustryList[1][Industry]" Value="CPG" RecordedValue="CPG" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IndustryList[2][IndustryID]" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IndustryList[2][Industry]" Value="Regulated Healthcare" RecordedValue="Regulated Healthcare" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IndustryList[3][IndustryID]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IndustryList[3][Industry]" Value="Foodservice" RecordedValue="Foodservice" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IndustryList[4][IndustryID]" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="IndustryList[4][Industry]" Value="Apparel" RecordedValue="Apparel" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[0][LevelCategoryID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[0][LevelCategoryIndustryID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[0][DisplayName]" Value="Each" RecordedValue="Each" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[0][SortOrder]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[0][IsBase]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[0][IsHomogeneous]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[1][LevelCategoryID]" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[1][LevelCategoryIndustryID]" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[1][DisplayName]" Value="Inner Pack" RecordedValue="Inner Pack" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[1][SortOrder]" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[1][IsBase]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[1][IsHomogeneous]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[2][LevelCategoryID]" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[2][LevelCategoryIndustryID]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[2][DisplayName]" Value="Case" RecordedValue="Case" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[2][SortOrder]" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[2][IsBase]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[2][IsHomogeneous]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[3][LevelCategoryID]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[3][LevelCategoryIndustryID]" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[3][DisplayName]" Value="Display Shipper" RecordedValue="Display Shipper" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[3][SortOrder]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[3][IsBase]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[3][IsHomogeneous]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[4][LevelCategoryID]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[4][LevelCategoryIndustryID]" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[4][DisplayName]" Value="Mixed Case" RecordedValue="Mixed Case" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[4][SortOrder]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[4][IsBase]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[4][IsHomogeneous]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[5][LevelCategoryID]" Value="7" RecordedValue="7" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[5][LevelCategoryIndustryID]" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[5][DisplayName]" Value="Case as Each" RecordedValue="Case as Each" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[5][SortOrder]" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[5][IsBase]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[5][IsHomogeneous]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[6][LevelCategoryID]" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[6][LevelCategoryIndustryID]" Value="7" RecordedValue="7" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[6][DisplayName]" Value="Pallet" RecordedValue="Pallet" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[6][SortOrder]" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[6][IsBase]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[6][IsHomogeneous]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[7][LevelCategoryID]" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[7][LevelCategoryIndustryID]" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[7][DisplayName]" Value="Mixed Pallet" RecordedValue="Mixed Pallet" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[7][SortOrder]" Value="7" RecordedValue="7" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[7][IsBase]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="PackagingLevelList[7][IsHomogeneous]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="StatusList[0][EntityStateID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="StatusList[0][EntityState]" Value="Draft" RecordedValue="Draft" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="StatusList[1][EntityStateID]" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="StatusList[1][EntityState]" Value="In Use" RecordedValue="In Use" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="DimensionUnitsOfMeasureList[0][UnitOfMeasureID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="DimensionUnitsOfMeasureList[0][UnitOfMeasure]" Value="Inches" RecordedValue="Inches" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="DimensionUnitsOfMeasureList[1][UnitOfMeasureID]" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="DimensionUnitsOfMeasureList[1][UnitOfMeasure]" Value="Feet" RecordedValue="Feet" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="DimensionUnitsOfMeasureList[2][UnitOfMeasureID]" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="DimensionUnitsOfMeasureList[2][UnitOfMeasure]" Value="Millimeters" RecordedValue="Millimeters" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="DimensionUnitsOfMeasureList[3][UnitOfMeasureID]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="DimensionUnitsOfMeasureList[3][UnitOfMeasure]" Value="Centimeters" RecordedValue="Centimeters" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="DimensionUnitsOfMeasureList[4][UnitOfMeasureID]" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="DimensionUnitsOfMeasureList[4][UnitOfMeasure]" Value="Meters" RecordedValue="Meters" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="WeightUnitsOfMeasureList[0][UnitOfMeasureID]" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="WeightUnitsOfMeasureList[0][UnitOfMeasure]" Value="Ounces" RecordedValue="Ounces" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="WeightUnitsOfMeasureList[1][UnitOfMeasureID]" Value="7" RecordedValue="7" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="WeightUnitsOfMeasureList[1][UnitOfMeasure]" Value="Pounds" RecordedValue="Pounds" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="WeightUnitsOfMeasureList[2][UnitOfMeasureID]" Value="10" RecordedValue="10" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="WeightUnitsOfMeasureList[2][UnitOfMeasure]" Value="Milligrams" RecordedValue="Milligrams" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="WeightUnitsOfMeasureList[3][UnitOfMeasureID]" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="WeightUnitsOfMeasureList[3][UnitOfMeasure]" Value="Grams" RecordedValue="Grams" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="WeightUnitsOfMeasureList[4][UnitOfMeasureID]" Value="9" RecordedValue="9" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="WeightUnitsOfMeasureList[4][UnitOfMeasure]" Value="Kilograms" RecordedValue="Kilograms" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="WeightUnitsOfMeasureList[5][UnitOfMeasureID]" Value="11" RecordedValue="11" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="WeightUnitsOfMeasureList[5][UnitOfMeasure]" Value="Short Ton" RecordedValue="Short Ton" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="SolutionProviderBanner" Value="This is a place holder for Solution Provider Banner" RecordedValue="This is a place holder for Solution Provider Banner" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="GPCUrl" Value="https://www.gs1.org/services/gpc-browser" RecordedValue="https://www.gs1.org/services/gpc-browser" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="GTIN_12_13" Value="N/A" RecordedValue="N/A" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="hontUo6vWlGhRxSJ5rpK15nryEFW_jo1mZyTXwFuJSYA2fun2XAt9mHIWxATcgecigtUFfuB73bkV8lPdd2JDOS3MfYuA_IabNr87oduKRe188NCzjue_JbLvJO3eEX0imDHlwOVuBOxCkVE_QKoMA2" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

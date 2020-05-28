@@ -1,0 +1,18 @@
+﻿<appSettings>
+  <add key="iMIS-ConnectionString" value="Data Source=192.168.12.189; User id=hlee; Password=hlee12#; Initial Catalog=uccdbi; Connection Timeout=300"/>
+  <add key="Selenium-Headless" value="Yes"/>
+  <add key="Debug" value="No"/>
+  <add key="PublicAppUrl-PCIA" value="https://dnn84.dev.gs1us.org/application-for-barcodes-authorized-by-gs1-us"/>
+  <add key="MemberAppUrl-RequestAdditionalPrefixes" value="https://members.dev.gs1us.org/MY-ACCOUNT/Request-Additional-Prefixes"/>
+  <add key="MemberAppUrl-DatahubSignup" value="https://members.dev.gs1us.org/datahub/sign-up"/>
+  <add key="MemberAppUrl-UNSPSC" value="https://unspsc.dev.gs1us.org/sign-up"/>
+  <add key="MemberAppUrl-Renewal" value="http://members.dev.gs1us.org/mygs1usrenewal"/>
+  <add key="PayPal-Username" value="ubalasubramanian@gs1us.org"/>
+  <add key="PayPal-Password" value="ubalasubramanian"/>
+  <add key="TestAccount-Email" value="automationtestgs1user@gmail.com"/>
+  <add key="TestAccount-EmailPassword" value="automation1"/>
+  <add key="TestAccount-PortalPassword" value="Automation@1"/>
+  <add key="TestAccount-CompanyName" value="C32G4LCTNU"/>
+  <add key="TestAccount-ImapHost" value="imap.gmail.com"/>
+  <add key="TestAccount-ImapPort" value="993"/>
+</appSettings>

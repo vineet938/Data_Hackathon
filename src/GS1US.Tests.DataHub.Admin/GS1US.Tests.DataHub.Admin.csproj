@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="gs1us.tests.common.apis.datahub.umbrella" Version="1.0.0" />
+    <PackageReference Include="selenium.webdriver.chromedriver" Version="74.0.3729.6" />
+    <PackageReference Include="selenium.webdriver.geckodriver" Version="0.24.0" />
+    <PackageReference Include="shouldly" Version="3.0.2" />
+    <PackageReference Include="specflow" Version="3.0.213" />
+    <PackageReference Include="specflow.tools.msbuild.generation" Version="3.0.213" />
+    <PackageReference Include="specrun.runner" Version="3.0.344" />
+    <PackageReference Include="specrun.specflow" Version="3.0.344" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="testconfig.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\SeleniumTests3\src\GS1US.Tests.Common\GS1US.Tests.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Features\UmbrellaAdminUiAdvanced.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UmbrellaAdminUiAdvanced.feature</DependentUpon>
+    </Compile>
+    <Compile Update="Features\UmbrellaAdminUiBugs.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UmbrellaAdminUiBugs.feature</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <SpecFlowFeatureFiles Update="Features\UmbrellaAdminUiAdvanced.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>UmbrellaAdminUiAdvanced.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+    <SpecFlowFeatureFiles Update="Features\UmbrellaAdminUiBugs.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>UmbrellaAdminUiBugs.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+  </ItemGroup>
+</Project>

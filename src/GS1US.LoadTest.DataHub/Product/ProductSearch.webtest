@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="WebTest1" Id="e3172019-c274-425f-8256-273da7067306" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.097fa02a-614f-42bb-a582-dc8ca98d620e.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <IncludedWebTest Name="signin" Path="..\security\signin.webtest" Id="2225f419-35b8-42f1-8880-3b1682b83aaf" IsCodedWebTest="False" InheritWebTestSettings="False" />
+    <Request Method="POST" Guid="98c736da-5464-4a6d-b912-c5968be70c23" Version="1.1" Url="https://dh.stage.gs1us.org/Product/ViewUse/ApplyFilter" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="https://dh.stage.gs1us.org/Product/ViewUse" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="model[Company]" Value="sale" RecordedValue="sale" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="model[CountryID]" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam3.model[CountryID]}}" UrlEncode="True" />
+        <FormPostParameter Name="model[IndustryID]" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam4.model[IndustryID]}}" UrlEncode="True" />
+        <FormPostParameter Name="model[ModifiedFrom]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="model[ModifiedTo]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="model[PackagingLevelID]" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam5.model[PackagingLevelID]}}" UrlEncode="True" />
+        <FormPostParameter Name="__RequestVerificationToken" Value="$HIDDEN2.__RequestVerificationToken" RecordedValue="qzUCWxQtcXHpsKE4rNN3znajC8gvk2wPUR8GkFPOC3H2CCZvvg7EQYseFD_vitODL1MhRmnv0pA2st8i1zY4CLPgm3SB4w5olJOsNTIZTya_UpJ8Fw9-QhPblonA3aLJVSPOeokik9s-xsuuaXlL1Q2" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="93a42d59-57d5-4fb4-acfd-b8fdafeb9f0a" Version="1.1" Url="https://dh.stage.gs1us.org/Product/ViewUse/GetSearchResults" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="https://dh.stage.gs1us.org/Product/ViewUse" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="draw" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[0][data]" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam6.columns[0][data]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[0][name]" Value="ProductID" RecordedValue="ProductID" CorrelationBinding="{{FormPostParam7.columns[0][name]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[0][searchable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam8.columns[0][searchable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[0][orderable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam9.columns[0][orderable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[0][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[0][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[1][data]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[1][name]" Value="Company" RecordedValue="Company" CorrelationBinding="{{FormPostParam10.columns[1][name]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[1][searchable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam11.columns[1][searchable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[1][orderable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam12.columns[1][orderable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[1][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[1][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[2][data]" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[2][name]" Value="Brand" RecordedValue="Brand" CorrelationBinding="{{FormPostParam13.columns[2][name]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[2][searchable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam14.columns[2][searchable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[2][orderable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam15.columns[2][orderable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[2][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[2][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[3][data]" Value="3" RecordedValue="3" CorrelationBinding="{{FormPostParam16.columns[3][data]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[3][name]" Value="Description" RecordedValue="Description" CorrelationBinding="{{FormPostParam17.columns[3][name]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[3][searchable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam18.columns[3][searchable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[3][orderable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam19.columns[3][orderable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[3][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[3][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[4][data]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[4][name]" Value="GTIN" RecordedValue="GTIN" CorrelationBinding="{{FormPostParam20.columns[4][name]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[4][searchable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam21.columns[4][searchable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[4][orderable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam22.columns[4][orderable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[4][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[4][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[5][data]" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[5][name]" Value="Industry" RecordedValue="Industry" CorrelationBinding="{{FormPostParam23.columns[5][name]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[5][searchable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam24.columns[5][searchable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[5][orderable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam25.columns[5][orderable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[5][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[5][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[6][data]" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[6][name]" Value="Level" RecordedValue="Level" CorrelationBinding="{{FormPostParam26.columns[6][name]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[6][searchable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam27.columns[6][searchable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[6][orderable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam28.columns[6][orderable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[6][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[6][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[7][data]" Value="7" RecordedValue="7" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[7][name]" Value="Prefix" RecordedValue="Prefix" CorrelationBinding="{{FormPostParam29.columns[7][name]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[7][searchable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam30.columns[7][searchable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[7][orderable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam31.columns[7][orderable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[7][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[7][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[8][data]" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[8][name]" Value="DateModified" RecordedValue="DateModified" CorrelationBinding="{{FormPostParam32.columns[8][name]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[8][searchable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam33.columns[8][searchable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[8][orderable]" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam34.columns[8][orderable]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[8][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[8][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="order[0][column]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="order[0][dir]" Value="asc" RecordedValue="asc" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="order[1][column]" Value="3" RecordedValue="3" CorrelationBinding="{{FormPostParam35.order[1][column]}}" UrlEncode="True" />
+        <FormPostParameter Name="order[1][dir]" Value="asc" RecordedValue="asc" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="start" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam36.start}}" UrlEncode="True" />
+        <FormPostParameter Name="length" Value="10" RecordedValue="10" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="search[value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="search[regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

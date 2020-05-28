@@ -1,0 +1,11 @@
+{
+    "headless": false,
+    "debug": true,
+    "browser":  "firefox",
+    "baseurl": "https://dh2.qa.gs1us.org/gs1usadmin/home",
+    "username": "testautogs1user@gmail.com",
+    "password": "secret123",
+    "apiBaseUrl":  "https://internal-qa-apim.azure-api.net/api/v2",
+    "umbrellaAdmin": "194741",
+    "apimKey": "8c88c8c111222333a555ababa9996677"
+}

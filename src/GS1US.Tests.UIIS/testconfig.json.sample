@@ -1,0 +1,16 @@
+﻿{
+  "headless": true,
+  
+  "debug": true,
+
+  "uiis": {
+    "url": "https://uiis-stage-web.azurewebsites.net",
+    "username": "test@gs1us.org",
+    "password": "secret123"
+  },
+
+  "connectionString": {
+    "imis": "Data Source=192.168.12.189; User id=********; Password=********; Initial Catalog=uccdbi; Connection Timeout=300",
+    "uiis": "Server=tcp:uiis-qa-database-server.database.windows.net,1433;Initial Catalog=uiis-qa-database;Persist Security Info=False;User ID=********;Password=********;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  }
+}

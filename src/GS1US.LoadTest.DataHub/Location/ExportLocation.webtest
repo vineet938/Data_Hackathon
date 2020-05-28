@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="ExportLocation" Id="ed1f34ae-33cc-4cd6-ab06-7c3e243fe353" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.f0a94e9b-ffcd-40db-aac5-4c198f2c63e5.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <IncludedWebTest Name="signin_IH_" Path="..\security\signin_ih_.webtest" Id="5c594dbf-8392-4e2d-98cd-6e6742843464" IsCodedWebTest="False" InheritWebTestSettings="False" />
+    <Comment CommentText="Location &gt; Export &gt; Search &gt; Custom Export All" />
+    <Request Method="GET" Guid="7a441abb-ad1b-4e61-9bda-7aa34445891b" Version="1.1" Url="https://dh.stage.gs1us.org/Location/Export" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="a4ffbe32-a634-438d-9c3e-2f7e74864430" Version="1.1" Url="https://dh.stage.gs1us.org/bundles/js/areas/location" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="https://dh.stage.gs1us.org/Location/Export" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="v" Value="RjFZdwCdWGoc75ZXalidD7yneiip5zRmNpO9RaPETQ81" RecordedValue="RjFZdwCdWGoc75ZXalidD7yneiip5zRmNpO9RaPETQ81" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="POST" Guid="9059f5c0-8375-4b71-8e2d-3eb9e484eacb" Version="1.1" Url="https://dh.stage.gs1us.org/Home/ApimDeveloperPortal" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="https://dh.stage.gs1us.org/Location/Export" />
+          </Headers>
+          <StringHttpBody ContentType="" InsertByteOrderMark="False">
+          </StringHttpBody>
+        </Request>
+        <Request Method="POST" Guid="5ef0725d-30c9-4a66-b01f-4061e367a8b9" Version="1.1" Url="https://dh.stage.gs1us.org/Location/Export/GetResetConditionalAttributes" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="https://dh.stage.gs1us.org/Location/Export" />
+          </Headers>
+          <FormPostHttpBody>
+            <FormPostParameter Name="IndustryID" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="SupplyChainRoleID" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="__RequestVerificationToken" Value="rtSvYlyXjAERX2LPBtJXfuDdymT-gXOZIvWkCfWa0og7IdvEBAi3VaRfRfvrmAirIHPp1j7ykSHXoA39nBxO0wxP5_g-YcJR2ARgIFrhcRuYafYe8qi1zU_QMFtclVzU3eO9DM9IewQf6W_gDdaI5Q2" RecordedValue="rtSvYlyXjAERX2LPBtJXfuDdymT-gXOZIvWkCfWa0og7IdvEBAi3VaRfRfvrmAirIHPp1j7ykSHXoA39nBxO0wxP5_g-YcJR2ARgIFrhcRuYafYe8qi1zU_QMFtclVzU3eO9DM9IewQf6W_gDdaI5Q2" CorrelationBinding="" UrlEncode="True" />
+          </FormPostHttpBody>
+        </Request>
+        <Request Method="POST" Guid="6bdc32e0-8eda-459d-bd35-0e1e101b5453" Version="1.1" Url="https://dh.stage.gs1us.org/Account/KeepAlive" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="*/*" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="https://dh.stage.gs1us.org/Location/Export" />
+          </Headers>
+          <StringHttpBody ContentType="" InsertByteOrderMark="False">
+          </StringHttpBody>
+        </Request>
+      </DependentRequests>
+    </Request>
+    <Request Method="GET" Guid="e0281f1b-e7ab-424a-a2c1-0ca73239a192" Version="1.1" Url="https://www.atmrum.net/conf/v1/atm/fpconfig.min.json" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://dh.stage.gs1us.org/Location/Export" />
+      </Headers>
+    </Request>
+    <Request Method="POST" Guid="1c53927e-2218-4314-83ed-a46c8ede7657" Version="1.1" Url="https://dh.stage.gs1us.org/Home/GetUnreadNotifications" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="https://dh.stage.gs1us.org/Location/Export" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__RequestVerificationToken" Value="rtSvYlyXjAERX2LPBtJXfuDdymT-gXOZIvWkCfWa0og7IdvEBAi3VaRfRfvrmAirIHPp1j7ykSHXoA39nBxO0wxP5_g-YcJR2ARgIFrhcRuYafYe8qi1zU_QMFtclVzU3eO9DM9IewQf6W_gDdaI5Q2" RecordedValue="rtSvYlyXjAERX2LPBtJXfuDdymT-gXOZIvWkCfWa0og7IdvEBAi3VaRfRfvrmAirIHPp1j7ykSHXoA39nBxO0wxP5_g-YcJR2ARgIFrhcRuYafYe8qi1zU_QMFtclVzU3eO9DM9IewQf6W_gDdaI5Q2" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="2149257c-bade-40e3-9d42-a120a8d3872b" Version="1.1" Url="https://dh.stage.gs1us.org/Location/Export/SetFilterModel" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="https://dh.stage.gs1us.org/Location/Export" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="model[IndustryID]" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="model[SupplyChainRoleID]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="model[Address][State]" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam1.model[Address][State]}}" UrlEncode="True" />
+        <FormPostParameter Name="model[Address][Country]" Value="239" RecordedValue="239" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="model[Address][Verified]" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam2.model[Address][Verified]}}" UrlEncode="True" />
+        <FormPostParameter Name="model[Advanced][StatusesToInclude][0]" Value="9" RecordedValue="9" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="model[Advanced][Validated]" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam3.model[Advanced][Validated]}}" UrlEncode="True" />
+        <FormPostParameter Name="model[Advanced][OnlyLocationsIManage]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__RequestVerificationToken" Value="rtSvYlyXjAERX2LPBtJXfuDdymT-gXOZIvWkCfWa0og7IdvEBAi3VaRfRfvrmAirIHPp1j7ykSHXoA39nBxO0wxP5_g-YcJR2ARgIFrhcRuYafYe8qi1zU_QMFtclVzU3eO9DM9IewQf6W_gDdaI5Q2" RecordedValue="rtSvYlyXjAERX2LPBtJXfuDdymT-gXOZIvWkCfWa0og7IdvEBAi3VaRfRfvrmAirIHPp1j7ykSHXoA39nBxO0wxP5_g-YcJR2ARgIFrhcRuYafYe8qi1zU_QMFtclVzU3eO9DM9IewQf6W_gDdaI5Q2" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="794aa55a-4dea-4c12-9ab2-1c1fc8a5497f" Version="1.1" Url="https://dh.stage.gs1us.org/Location/Export/GetResultsDataTable" ThinkTime="7" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="https://dh.stage.gs1us.org/Location/Export" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="draw" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[0][data]" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam4.columns[0][data]}}" UrlEncode="True" />
+        <FormPostParameter Name="columns[0][name]" Value="LocationId" RecordedValue="LocationId" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[0][searchable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[0][orderable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[0][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[0][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[1][data]" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[1][name]" Value="GLN" RecordedValue="GLN" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[1][searchable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[1][orderable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[1][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[1][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[2][data]" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[2][name]" Value="Name" RecordedValue="Name" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[2][searchable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[2][orderable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[2][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[2][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[3][data]" Value="3" RecordedValue="3" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[3][name]" Value="Address" RecordedValue="Address" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[3][searchable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[3][orderable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[3][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[3][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[4][data]" Value="4" RecordedValue="4" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[4][name]" Value="City" RecordedValue="City" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[4][searchable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[4][orderable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[4][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[4][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[5][data]" Value="5" RecordedValue="5" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[5][name]" Value="StateProvince" RecordedValue="StateProvince" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[5][searchable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[5][orderable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[5][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[5][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[6][data]" Value="6" RecordedValue="6" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[6][name]" Value="Zip" RecordedValue="Zip" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[6][searchable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[6][orderable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[6][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[6][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[7][data]" Value="7" RecordedValue="7" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[7][name]" Value="Country" RecordedValue="Country" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[7][searchable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[7][orderable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[7][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[7][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[8][data]" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[8][name]" Value="Link" RecordedValue="Link" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[8][searchable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[8][orderable]" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[8][search][value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="columns[8][search][regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="start" Value="0" RecordedValue="0" CorrelationBinding="{{FormPostParam5.start}}" UrlEncode="True" />
+        <FormPostParameter Name="length" Value="10" RecordedValue="10" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="search[value]" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="search[regex]" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="POST" Guid="9f670045-482c-4994-94a8-5f5b3435303e" Version="1.1" Url="https://dh.stage.gs1us.org/Location/Export/CustomExportGenerate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="https://dh.stage.gs1us.org/Location/Export" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="wholeQuery" Value="true" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="listOfFields" Value="LocationName,LocationName2,GLN,Status,ParentGLN,ReplacedGLN,AddressLine1,AddressLine2,AddressLine3,City,StateProvince,Zip,Country,Phone,LocationType,GLNType,Comment,[HC Corporate Relationship],[Class Of Trade 1],[Class Of Trade 2],[Class Of Trade 3],[Class Of Trade Comment],[Business Sector],[FS Corporate Relationship],[Date Open],[Date Close]" RecordedValue="LocationName,LocationName2,GLN,Status,ParentGLN,ReplacedGLN,AddressLine1,AddressLine2,AddressLine3,City,StateProvince,Zip,Country,Phone,LocationType,GLNType,Comment,[HC Corporate Relationship],[Class Of Trade 1],[Class Of Trade 2],[Class Of Trade 3],[Class Of Trade Comment],[Business Sector],[FS Corporate Relationship],[Date Open],[Date Close]" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="industryID" Value="8" RecordedValue="8" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="supplyChainRoleID" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="exportFormat" Value="TAB" RecordedValue="TAB" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__RequestVerificationToken" Value="rtSvYlyXjAERX2LPBtJXfuDdymT-gXOZIvWkCfWa0og7IdvEBAi3VaRfRfvrmAirIHPp1j7ykSHXoA39nBxO0wxP5_g-YcJR2ARgIFrhcRuYafYe8qi1zU_QMFtclVzU3eO9DM9IewQf6W_gDdaI5Q2" RecordedValue="rtSvYlyXjAERX2LPBtJXfuDdymT-gXOZIvWkCfWa0og7IdvEBAi3VaRfRfvrmAirIHPp1j7ykSHXoA39nBxO0wxP5_g-YcJR2ARgIFrhcRuYafYe8qi1zU_QMFtclVzU3eO9DM9IewQf6W_gDdaI5Q2" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>

@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\SpecRun.Runner.1.8.3\build\SpecRun.Runner.props" Condition="Exists('..\packages\SpecRun.Runner.1.8.3\build\SpecRun.Runner.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8ABE3F0-9203-4DC6-8A88-AD1AAEADA682}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GS1US.Tests.Common</RootNamespace>
+    <AssemblyName>GS1US.Tests.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.5\lib\net451\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonSubTypes, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\JsonSubTypes.1.5.2\lib\net46\JsonSubTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="LanguageExt.Core, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LanguageExt.Core.3.1.15\lib\net45\LanguageExt.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.6.9.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.6.9\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SpecRun.SpecFlowPlugin, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.2-4-0.1.8.3\lib\net45\SpecRun.SpecFlowPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Private.DataContractSerialization, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Private.DataContractSerialization.4.3.0\lib\netstandard1.3\System.Private.DataContractSerialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.TypeExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.TypeExtensions.4.3.0\lib\net46\System.Reflection.TypeExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Serialization.Primitives.4.3.0\lib\net46\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.XmlDocument, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.XmlDocument.4.3.0\lib\net46\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="TechTalk.SpecFlow, Version=2.4.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.2.4.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="TechTalk.SpecRun, Version=1.8.0.0, Culture=neutral, PublicKeyToken=d0fc5cc18b3b389b, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.2-4-0.1.8.3\lib\net45\TechTalk.SpecRun.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TechTalk.SpecRun.Common, Version=1.8.0.0, Culture=neutral, PublicKeyToken=d0fc5cc18b3b389b, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.SpecFlow.2-4-0.1.8.3\lib\net45\TechTalk.SpecRun.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.14.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.14.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APIs\DataHub\Umbrella\Api\DefaultApi.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\ApiClient.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\ApiException.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\ApiResponse.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\ClientUtils.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\Configuration.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\ExceptionFactory.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\GlobalConfiguration.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\HttpMethod.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\IApiAccessor.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\IAsynchronousClient.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\IReadableConfiguration.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\ISynchronousClient.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\Multimap.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\OpenAPIDateConverter.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Client\RequestOptions.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Model\UmbrellaChild.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Model\UmbrellaDefinitionRequest.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Model\UmbrellaDefinitionResponse.cs" />
+    <Compile Include="APIs\DataHub\Umbrella\Model\UmbrellaErrorResponse.cs" />
+    <Compile Include="Database\Account.cs" />
+    <Compile Include="Database\DbUtils.cs" />
+    <Compile Include="Database\Database.cs" />
+    <Compile Include="Database\Imis.cs" />
+    <Compile Include="Database\UmbrellaDb.cs" />
+    <Compile Include="Pages\AccessControl\SignUp.cs" />
+    <Compile Include="Pages\AccessControl\Login.cs" />
+    <Compile Include="Pages\DataHub\AdminCompanySettings.cs" />
+    <Compile Include="Pages\DataHub\AdminCompanySettingsUmbrella.cs" />
+    <Compile Include="Pages\DataHub\CompanyDownload.cs" />
+    <Compile Include="Pages\DataHub\CompanyListMatch.cs" />
+    <Compile Include="Pages\DataHub\CompanySearchGln.cs" />
+    <Compile Include="Pages\DataHub\CompanySearchGtin.cs" />
+    <Compile Include="Pages\DataHub\CompanySearchPrefix.cs" />
+    <Compile Include="Pages\DataHub\CompanySearchCompany.cs" />
+    <Compile Include="Pages\DataHub\CompanySearchTabs.cs" />
+    <Compile Include="Pages\DataHub\ExportCenter.cs" />
+    <Compile Include="Pages\DataHub\LocationAddNewShare.cs" />
+    <Compile Include="Pages\DataHub\LocationCreate.cs" />
+    <Compile Include="Pages\DataHub\LocationDetails.cs" />
+    <Compile Include="Pages\DataHub\LocationDownload.cs" />
+    <Compile Include="Pages\DataHub\LocationGlnSearch.cs" />
+    <Compile Include="Pages\DataHub\LocationHierarchy.cs" />
+    <Compile Include="Pages\DataHub\LocationImport.cs" />
+    <Compile Include="Pages\DataHub\LocationManage.cs" />
+    <Compile Include="Pages\DataHub\LocationSharing.cs" />
+    <Compile Include="Pages\DataHub\LocationTabs.cs" />
+    <Compile Include="Pages\DataHub\LocationViewUse.cs" />
+    <Compile Include="Pages\DataHub\MessageCenter.cs" />
+    <Compile Include="Pages\DataHub\PopupAssignGTIN.cs" />
+    <Compile Include="Pages\DataHub\PopupConfirmMakeInactive.cs" />
+    <Compile Include="Pages\DataHub\PopupLocationAddConfirm.cs" />
+    <Compile Include="Pages\DataHub\PopupLocationMakeActive.cs" />
+    <Compile Include="Pages\DataHub\PopupLocExportSpec.cs" />
+    <Compile Include="Pages\DataHub\PopupLocHierarchyExportSpec.cs" />
+    <Compile Include="Pages\DataHub\PopupLocHierarchyExport.cs" />
+    <Compile Include="Pages\DataHub\PopupMessage.cs" />
+    <Compile Include="Pages\DataHub\PopupParentGlnSelection.cs" />
+    <Compile Include="Pages\DataHub\PopupProductExport.cs" />
+    <Compile Include="Pages\DataHub\Import.cs" />
+    <Compile Include="Pages\DataHub\PopupSendMessage.cs" />
+    <Compile Include="Pages\DataHub\ProductImport.cs" />
+    <Compile Include="Pages\DataHub\ProductCreate.cs" />
+    <Compile Include="Pages\DataHub\MainPage.cs" />
+    <Compile Include="Pages\DataHub\ProductImportDownloadGtins.cs" />
+    <Compile Include="Pages\DataHub\ProductManage.cs" />
+    <Compile Include="Pages\DataHub\ProductDetails.cs" />
+    <Compile Include="Pages\DataHub\AdminProductSettings.cs" />
+    <Compile Include="Pages\DataHub\ProductViewUse.cs" />
+    <Compile Include="Pages\DataHub\ProductShare.cs" />
+    <Compile Include="Pages\DataHub\ProductShareAddNew.cs" />
+    <Compile Include="Pages\DataHub\Popup.cs" />
+    <Compile Include="Pages\DataHub\PopupStatusChangeArchived.cs" />
+    <Compile Include="Pages\DataHub\PopupAddShare.cs" />
+    <Compile Include="Pages\DataHub\PopupStatusChangeInUse.cs" />
+    <Compile Include="Pages\DataHub\ReportsCreate.cs" />
+    <Compile Include="Pages\DataHub\WalkMeThroughPopup.cs" />
+    <Compile Include="Pages\PageElements.cs" />
+    <Compile Include="Pages\PagesCommon.cs" />
+    <Compile Include="Pages\UserPortal\CompanyList.cs" />
+    <Compile Include="Pages\UserPortal\LoginPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup\ITestConfig.cs" />
+    <Compile Include="Setup\SetupUtils.cs" />
+    <Compile Include="Setup\SimpleTestConfig.cs" />
+    <Compile Include="Utils\ScreenshotUtils.cs" />
+    <Compile Include="Utils\StringUtils.cs" />
+    <Compile Include="Utils\FileUtils.cs" />
+    <Compile Include="Utils\JsUtils.cs" />
+    <Compile Include="Utils\LockUtils.cs" />
+    <Compile Include="Utils\PollUtils.cs" />
+    <Compile Include="Utils\RandUtils.cs" />
+    <Compile Include="Utils\TableUtils.cs" />
+    <Compile Include="Utils\WaitUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Default.srprofile">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="runtests.cmd" />
+    <None Include="SpecRunTestProfile.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SpecRunTestProfile_2011_09.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="APIs\DataHub\Umbrella\No\" />
+    <Folder Include="Pages\GEPIR\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\SpecRun.Runner.1.8.3\build\SpecRun.Runner.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecRun.Runner.1.8.3\build\SpecRun.Runner.props'))" />
+    <Error Condition="!Exists('..\packages\SpecFlow.2.4.0\build\SpecFlow.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecFlow.2.4.0\build\SpecFlow.targets'))" />
+    <Error Condition="!Exists('..\packages\SpecRun.SpecFlow.2-4-0.1.8.3\build\SpecRun.SpecFlow.2-4-0.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SpecRun.SpecFlow.2-4-0.1.8.3\build\SpecRun.SpecFlow.2-4-0.targets'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.42.0.1\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.ChromeDriver.2.42.0.1\build\Selenium.WebDriver.ChromeDriver.targets'))" />
+  </Target>
+  <Import Project="..\packages\SpecFlow.2.4.0\build\SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.4.0\build\SpecFlow.targets')" />
+  <Import Project="..\packages\SpecRun.SpecFlow.2-4-0.1.8.3\build\SpecRun.SpecFlow.2-4-0.targets" Condition="Exists('..\packages\SpecRun.SpecFlow.2-4-0.1.8.3\build\SpecRun.SpecFlow.2-4-0.targets')" />
+  <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.2.42.0.1\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.42.0.1\build\Selenium.WebDriver.ChromeDriver.targets')" />
+</Project>

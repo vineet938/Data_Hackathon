@@ -1,0 +1,14 @@
+{
+  "headless": true,
+  "debug": false,
+
+  "datahub": {
+    "url": "#{Test.DataHub.URL}#",
+    "username": "#{Test.DataHub.Username}#",
+    "password": "#{Test.DataHub.Password}#"
+  },
+
+  "connectionString": {
+    "imis": "#{Test.DataHub.Db.Imis}#"
+  }
+}
